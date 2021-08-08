@@ -1,12 +1,14 @@
 {
 padding:0;
 margin:0;
+background:black
 }
 #game{
 width:400px;
 height:500px;
 border:1px solid black;
 margin:auto;
+background:black;
 }
 #character{
 width:20px;
