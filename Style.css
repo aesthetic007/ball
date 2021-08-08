@@ -1,14 +1,19 @@
 {
 padding:0;
 margin:0;
-background:black
+}
+.main{
+		width:100%;
+		height:100vh;
+		position:relative;
+		overflow:hidden;
+		background:linear-gradient(to right,#9c27b0,#8ecdff);  #f9b3a6,#a1fbf8
 }
 #game{
 width:400px;
 height:500px;
 border:1px solid black;
 margin:auto;
-background:black;
 }
 #character{
 width:20px;
