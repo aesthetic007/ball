@@ -22,7 +22,9 @@ left:190px;
 z-index:1;
 }
 .controls{
-	position:absolute;
+	height:30%;
+	width:30%;
+        position:absolute;
 	right:10%;
 	top:50%;
 	transform:translateY(-50%);
