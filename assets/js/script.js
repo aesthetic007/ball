@@ -26,3 +26,18 @@ document.addEventListener("keyup",event=>{
 clearInterval(interval);
 both=0;
 });
+<script>
+		var  character=document.getElementById("character");
+		var controls=document.getElementById("controls");
+      controls.onclick=function(){
+			if(character.left){
+        character.left();
+				icon.src="assets/image/left.png";
+			}else{
+        character.right();
+				icon.src="assets/image/right.png";
+			}
+			
+		}
+		
+	</script>
