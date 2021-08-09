@@ -26,18 +26,18 @@ document.addEventListener("keyup",event=>{
 clearInterval(interval);
 both=0;
 });
-<script>
-		var  character=document.getElementById("character");
-		var controls=document.getElementById("controls");
-      controls.onclick=function(){
-			if(character.left){
-        character.left();
+		var character=document.getElementById("character");
+		var icon=document.getElementById("icon");
+                var icons=document.getElementById("icons");
+      icon.onclick=function(){
+			if(character.moveleft){
+                        character.moveright();
 				icon.src="assets/image/left.png";
 			}else{
-        character.right();
+        character.moveleft();
 				icon.src="assets/image/right.png";
 			}
 			
 		}
 		
-	</script>
+	
