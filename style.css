@@ -7,13 +7,13 @@ margin:0;
 		height:100vh;
 		position:relative;
 		overflow:hidden;
-		background:linear-gradient(to right,#9c27b0,#8ecdff);  #f9b3a6,#a1fbf8
+		background:linear-gradient(to right,#000,#000);
 	
 }
 #game{
 width:400px;
 height:500px;
-border:1px solid black;
+border:1px solid white;
 margin:auto;
 }
 #character{
