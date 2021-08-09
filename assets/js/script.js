@@ -1,7 +1,7 @@
 var character=document.getElementById("character");
 var interval;
 var both=0;
-function moveLeft(){
+.function moveLeft(){
 var left=
 parseInt(window.getComputedStyle(character).getPropertyValue("left"));
 character.style.left=left-2+"px";
