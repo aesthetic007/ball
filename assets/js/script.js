@@ -1,4 +1,4 @@
-var character = document.getElementById("game");
+var game = document.getElementById("game");
 var mousedownID = -1;
 function mousedownLeft(event){
 	if(mousedownID==-1)mousedownID=setInterval(whilemousedownLeft, 2);
