@@ -1,4 +1,4 @@
-var character = document.getElementById("character");
+var character = document.getElementById("game");
 var mousedownID = -1;
 function mousedownLeft(event){
 	if(mousedownID==-1)mousedownID=setInterval(whilemousedownLeft, 2);
@@ -10,9 +10,9 @@ function mouseupLeft(event){
 	}
 }
 function whilemousedownLeft(){
-	var left=parseInt(window.getComputedStyle(character).getpropertyValue("left"));
+	var left=parseInt(window.getComputedStyle(game).getpropertyValue("left"));
 	var newleft = left - 2;
-	character.style.left = newleft + "px";
+	game.style.left = newleft + "px";
 }
 function mousedownRight(event){
 	if(mousedownID==-1)mousedownID=setInterval(whilemousedownRight, 2);
@@ -24,9 +24,9 @@ function mouseupRight(event){
 	}
 }
 function whilemousedownRight(){
-	var left=parseInt(window.getComputedStyle(character).getpropertyValue("left"));
+	var left=parseInt(window.getComputedStyle(game).getpropertyValue("left"));
 	var newleft = left - 2;
-	character.style.left = newleft + "px";
+	game.style.left = newleft + "px";
 }
 document.addEventListener("keydown",event=>{
 	if(event.isComposing||event.keyCode == 229){
