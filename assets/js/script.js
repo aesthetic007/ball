@@ -12,7 +12,7 @@ function mouseupLeft(event){
 function whilemousedownLeft(){
 	var left=parseInt(window.getComputedStyle(game).getpropertyValue("left"));
 	var newleft = left - 2;
-	game.style.left = newleft + "px";
+	character.style.left = newleft + "px";
 }
 function mousedownRight(event){
 	if(mousedownID==-1)mousedownID=setInterval(whilemousedownRight, 2);
@@ -26,7 +26,7 @@ function mouseupRight(event){
 function whilemousedownRight(){
 	var left=parseInt(window.getComputedStyle(game).getpropertyValue("left"));
 	var newleft = left - 2;
-	game.style.left = newleft + "px";
+	character.style.left = newleft + "px";
 }
 document.addEventListener("keydown",event=>{
 	if(event.isComposing||event.keyCode == 229){
