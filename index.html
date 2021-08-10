@@ -6,104 +6,16 @@
 	<meta charset="UTF-8"> 
 	<title>Fall game</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/script. js></script>
+	
 </head>
 <body>
 	<div id="game">
 		<div id="character"></div>
 	</div>
-<script>
-	var character = document.getElementById("character");
-var mousedownID = -1;
-function mousedownLeft(event){
-	if(mousedownID==-1)mousedownID=setInterval(whilemousedownLeft, 2);
-}
-function mouseupLeft(event){
-	if(mousedownID!=-1){
-		clearInterval(mousedownID);
-		mousedownID=-1;
-	}
-}
-function whilemousedownLeft(){
-	var left=parseInt(window.getComputedStyle(character).getpropertyValue("left"));
-	var newleft = left - 2;
-	character.style.left = newleft + "px";
-}
-function mousedownRight(event){
-	if(mousedownID==-1)mousedownID=setInterval(whilemousedownRight, 2);
-}
-function mouseupRight(event){
-	if(mousedownID!=-1){
-		clearInterval(mousedownID);
-		mousedownID=-1;
-	}
-}
-function whilemousedownRight(){
-	var left=parseInt(window.getComputedStyle(character).getpropertyValue("left"));
-	var newleft = left - 2;
-	character.style.left = newleft + "px";
-}
-document.addEventListener("keydown",event=>{
-	if(event.isComposing||event.keyCode == 229){
-		return;
-	}
-	if(event.key==="ArrowLeft"||event.key==="a"){mousedownLeft();}
-	if(event.key==="ArrowRight"||event.key==="d"){mousedownRight();}
-});
-document.addEventListener("keyup",event=>{
-	if(event.isComposing||event.keyCode == 229){
-		return;
-	}
-	if(event.key==="ArrowLeft"||event.key==="a"){mousedownLeft();}
-	if(event.key==="ArrowRight"||event.key==="d"){mousedownRight();}
-});
-	</script>
+<script src="assets/js/script. js></script>
 </body>
-<script>
-var character = document.getElementById("character");
-var mousedownID = -1;
-function mousedownLeft(event){
-	if(mousedownID==-1)mousedownID=setInterval(whilemousedownLeft, 2);
-}
-function mouseupLeft(event){
-	if(mousedownID!=-1){
-		clearInterval(mousedownID);
-		mousedownID=-1;
-	}
-}
-function whilemousedownLeft(){
-	var left=parseInt(window.getComputedStyle(character).getpropertyValue("left"));
-	var newleft = left - 2;
-	character.style.left = newleft + "px";
-}
-function mousedownRight(event){
-	if(mousedownID==-1)mousedownID=setInterval(whilemousedownRight, 2);
-}
-function mouseupRight(event){
-	if(mousedownID!=-1){
-		clearInterval(mousedownID);
-		mousedownID=-1;
-	}
-}
-function whilemousedownRight(){
-	var left=parseInt(window.getComputedStyle(character).getpropertyValue("left"));
-	var newleft = left - 2;
-	character.style.left = newleft + "px";
-}
-document.addEventListener("keydown",event=>{
-	if(event.isComposing||event.keyCode == 229){
-		return;
-	}
-	if(event.key==="ArrowLeft"||event.key==="a"){mousedownLeft();}
-	if(event.key==="ArrowRight"||event.key==="d"){mousedownRight();}
-});
-document.addEventListener("keyup",event=>{
-	if(event.isComposing||event.keyCode == 229){
-		return;
-	}
-	if(event.key==="ArrowLeft"||event.key==="a"){mousedownLeft();}
-	if(event.key==="ArrowRight"||event.key==="d"){mousedownRight();}
-});
-	</script>
+<script src="assets/js/script. js></script>
 </html>
 	
 
